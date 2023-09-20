@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タイピングゲーム</title>
+  <meta name="description" content="簡単なタイピングゲームです">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p id="count" class="count">60</p>
+  <div id="wrap" class="wrap">
+    <span id="typed" class="typed"></span>
+    <span id="untyped"></span>
+  </div>
+  <button id="start" onclick="document.getElementById('scored').style.display = 'block'">スタート</button>
+  <p id="scored" class="scored">0</p>
+
+  <script type="text/Javascript" src="main.js"></script>
+</body>
+</html>
