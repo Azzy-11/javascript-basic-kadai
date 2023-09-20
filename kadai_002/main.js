@@ -125,7 +125,12 @@ const timer = () => {
 
     // カウントが0になったらタイマーを停止する
     if (time <= 0) {
-      gameOver(id);
+      // 0ms後にタイムアップメッセージを表示
+      typedfield.textContent = '';
+      untypedfield.textContent = 'タイムアップ';
+      setTimeout(() => {
+        gameOver(id);
+      }, 1);
     }
   }, 1000);
 };
